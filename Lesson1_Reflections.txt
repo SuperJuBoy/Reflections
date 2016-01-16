@@ -1,0 +1,60 @@
+-> Often errors crop up because of unintentional typos
+-> Scanning thousands of lines of code manually is tedious
+	- To help with this we have inbuilt utilities in Windoes, Unix and MAC
+		- Windows : FC FirstFile SecondFile
+					Will show lines in both text files, one below the other only displaying the lines that have changed
+		- Unix : diff -U FirstFile SeconFile (need to confrim syntax)
+					Uses + and - to show lines that have been added or removed from a given file
+
+-> Variety of text editors are available
+	- Text is written in the plain-text-format(sans formatting with just text and line feeds) unlike in Word which uses the rich-text format(formatting data is passed along with plain text)
+	- Sublime
+	- Notepad++			
+
+Excerice
+-> Installed Sublime and git on my PC and used gitBash to launch sublime from the command line	
+
+
+Question 
+How did viewing a diff between two versions of a file help you see the bug that was introduced ?
+Answer
+By comparing two files you can go over the changes at a glance and get to know if any of the changes were unintentional
+
+Question
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Answer
+It would help me save time by helping me rollback to prevously working versions of code, in case of any mishap
+
+Question
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Answer
+Pros - You would have absolute control of when to commit, so the number of commits would not be too high or too less
+Cons - You might forget to commit, accidently break the code and be unable to revert
+
+Question
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Answer
+If the same change was made across multiple files, it enables us to revert all at once rather than track each file seperately
+
+Question
+How can you use the commands git log and git diff to view the history of files?
+Answer
+git log - It will list out all the commit with their IDs,timestamp and commits, arranged in order of the commits by default
+git diff - git diff <First ID> <Second ID> , It will list out the additions(+ symbol appended) and deletions (- symbol appended)
+
+Question
+How might using version control make you more confident to make changes that could break something?
+Answer
+If anything goes wrong I can always revert to a working version of the code
+
+Question
+What do you want to try using Git for?
+Answer
+I'm going to start automating routine work using shell and java
+
+Git Commands
+
+git log
+git checkout
+git clone
+git diff
