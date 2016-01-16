@@ -1,0 +1,9 @@
+Git Commands
+git init
+git status
+
+Questions
+What happens when you initialize a repository? Why do you need to do it?
+Answer
+After initializing a repository git will start tracking that folder. However you will need to explicitly specify the files that  need to be tracked.
+
