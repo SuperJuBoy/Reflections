@@ -1,9 +1,19 @@
 Git Commands
 git init
 git status
+git commit
+git add (add untracked file to the staging area)
+git diff
+git diff --staged
+git reset --hard
 
-Questions
+Question 1
 What happens when you initialize a repository? Why do you need to do it?
 Answer
 After initializing a repository git will start tracking that folder. However you will need to explicitly specify the files that  need to be tracked.
+
+Question 2
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Answer
+The staging area stands between the working area and 'committed' area. It helps you to group together files that need to be committed together.
 
