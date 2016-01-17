@@ -17,3 +17,8 @@ How is the staging area different from the working directory and the repository?
 Answer
 The staging area stands between the working area and 'committed' area. It helps you to group together files that need to be committed together.
 
+Question 3
+How can you use the staging area to make sure you have one commit per logical change?
+Answer
+We can add all files that have been modified as part of this logical change into the staging area and commit them all together.
+
