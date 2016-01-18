@@ -6,6 +6,14 @@ git add (add untracked file to the staging area)
 git diff
 git diff --staged
 git reset --hard
+git branch (show list of available branches)
+git branch <branch-name> (creates a new branch with the name "branch-name")
+git checkout <branch-name> (checks out the branch "branch-name")	
+git log --graph --oneline <branch-1> <branch-2>
+git checkout -b <branch-name>
+git merge <branch-1> <branch-2>
+git show <commit ID>
+git branch -d <branch-name> (delete branch label)
 
 Question 1
 What happens when you initialize a repository? Why do you need to do it?
@@ -22,3 +30,27 @@ How can you use the staging area to make sure you have one commit per logical ch
 Answer
 We can add all files that have been modified as part of this logical change into the staging area and commit them all together.
 
+Question 4
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Answer
+Branches would help introduce experimental changes which could be merged into the main branch at a later stage thus keeping the "main" code "safe" 
+
+Question 5
+How do the diagrams help you visualize the branch structure?
+Answer
+It helps us to create a mental map of the code changes, so thats its easier to move around between different versions of the code
+
+Question 6
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Answer
+By merging two branches we combine the files in the most recent commits in both branches, to know which lines to be kept and which ones to be removed both files are compared with the first commit in its branch.
+I'm not sure of the diagram,i'll need to check on it
+
+Question 7
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Answer
+Pros - It saves us time by automatically merging files where there aren't any confilcts and the files can be merged easily
+Cons - There might be situations where the same area in the file is edited, in which case a conflict arises. There might be a large number of such cases which would need to be dealt with seperately, adding this functionality for all the different might not be realisitically possible or even worth the effort, as the programmer would be the best judge of how to resolve a conflict. 
+
+Doubt
+git show commit_id (what if the commit id is for the merge, which commit would it consider it to be its parent ?)
