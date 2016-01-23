@@ -1,0 +1,5 @@
+Git Commands
+git remote (list out the current remotes, Options -v verbose)
+	git remote add <remote-name>
+	git remote add <remote-name> <url>
+
