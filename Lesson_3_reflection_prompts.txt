@@ -2,7 +2,8 @@ Git Commands
 git remote (list out the current remotes, Options -v verbose)
 	git remote add <remote-name> <url>
 git push <remote-name> <branch-name>
-git pull <remote-name> <bransh-name>
+git pull <remote-name> <branch-name>
+git merge master origin/master (same as running git pull abd git merge one after the other)
 
 
 When would you want to use a remote repository rather than keeping all your work
@@ -26,12 +27,12 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+In situations where you know that you won't have internet access for a while, you can update to the most recent copy of the code from the remote. So you can update the remote at a later point.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+A way to go about it would be to keep the latest version of the code on a shared drive on the network, we would just need to copy to the shared. However, collaborating with others, merging code, keeping a track on what has changed with each version and reverting to an older version would not be possible without git and github
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
