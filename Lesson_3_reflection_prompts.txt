@@ -37,4 +37,4 @@ A way to go about it would be to keep the latest version of the code on a shared
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+Whenever we want to try out any experimental feature without breaking the "main" code, its preferable to branch off and merge only when the feature is stable.
